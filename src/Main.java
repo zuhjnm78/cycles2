@@ -130,9 +130,9 @@ public class Main {
         int year = 2023;
         int yearFor200 = year-200;
         int yearAfter100 = year +100;
-        for (; yearFor200 <= yearAfter100; yearFor200++){
-            if (yearFor200 %79 ==0  )
-                System.out.println(yearFor200);
+        int nextCometYear = year + 79 - year % 79;
+        for (; nextCometYear >= yearFor200 && nextCometYear < yearAfter100; nextCometYear-=79){
+                System.out.println(nextCometYear);
         }
 }
 }
