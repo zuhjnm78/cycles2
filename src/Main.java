@@ -74,7 +74,7 @@ public class Main {
             zinsen = (currentSavings + savings)*0.07;
             currentSavings = currentSavings + savings + zinsen;
             months++;
-            System.out.println("Месяц " + months + ", сумма накоплений  " + currentSavings + " рублей.");
+            System.out.printf("Месяц %d, сумма накоплений равна %.2f рублей. %n", months,currentSavings);
         }
         System.out.println(months + " месяцев Василию нужно будет копить, чтобы собрать сумму в 12 миллионов рублей.");
         }
@@ -92,9 +92,9 @@ public class Main {
             currentSavings = currentSavings + savings + zinsen;
             months++;
             if (months % 6 == 0)
-            System.out.println("Месяц " + months + ", сумма накоплений  " + currentSavings + " рублей.");
+            System.out.printf("Месяц %d, сумма накоплений равна %.2f рублей. %n", months,currentSavings);
         }
-        System.out.println("Месяц " + months + ", сумма накоплений  " + currentSavings + " рублей.");
+        System.out.printf("Месяц %d, сумма накоплений равна %.2f рублей. %n", months,currentSavings);
     }
     public static void task6() {
         System.out.println("Задача 6");
@@ -107,7 +107,7 @@ public class Main {
             zinsen = (currentSavings + savings)*0.07;
             currentSavings = currentSavings + savings + zinsen;
             if (months % 6 == 0)
-                System.out.println("Месяц " + months + ", сумма накоплений  " + currentSavings + " рублей.");
+                System.out.printf("Месяц %d, сумма накоплений равна %.2f рублей. %n", months,currentSavings);
         }
     }
     public static void task7() {
